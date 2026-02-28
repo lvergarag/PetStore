@@ -7,33 +7,35 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends BasePage {
 
-    private By Samsunggalaxys6Link = By.linkText("Samsung galaxy s6");
-    private By NokialumiaLink = By.linkText("Nokia lumia 1520");
-    private By Nexus6Link = By.partialLinkText("Nexus 6");
-    private By Samsunggalaxys7Link = By.partialLinkText("Samsung galaxy s7");
+    // Declaración de variables con su IDENTIFICADOR (nombre)
+    private By fishLink = By.xpath("//img[@src='../images/fish_icon.gif']");
+    private By dogsLink = By.xpath("//img[@src='../images/dogs_icon.gif']");
+    private By catsLink = By.xpath("//img[@src='../images/cats_icon.gif']");
+    private By reptilesLink = By.xpath("//img[@src='../images/reptiles_icon.gif']");
+    private By birdsLink = By.xpath("//img[@src='../images/birds_icon.gif']");
 
-    public HomePage(WebDriver driver) {
-        super(driver);
+    // Métodos corregidos usando los nombres de arriba
+    public void clickFish() {
+        wait.until(ExpectedConditions.elementToBeClickable(fishLink)).click();
     }
+    public void clickDogs() {
+        wait.until(ExpectedConditions.elementToBeClickable(dogsLink)).click();
+    }
+    public void clickCats() {
+        wait.until(ExpectedConditions.elementToBeClickable(catsLink)).click();
+    }
+    public void clickReptiles() {
+        wait.until(ExpectedConditions.elementToBeClickable(reptilesLink)).click();
+    }
+    public void clickBirds() {
+        wait.until(ExpectedConditions.elementToBeClickable(birdsLink)).click();
+    }
+
+    public HomePage(WebDriver driver) { super(driver); }
 
     public void open() {
-        driver.get("https://www.demoblaze.com/");
+        driver.get("https://petstore.octoperf.com/actions/Catalog.action");
     }
 
-    public void clickSamsungs6() {
-        wait.until(ExpectedConditions.elementToBeClickable(Samsunggalaxys6Link)).click();
-    }
 
-    public void clickNokiaLumia() {
-            wait.until(ExpectedConditions.elementToBeClickable(NokialumiaLink)).click();
-    }
-
-    public void clickNexus6() {
-        wait.until(ExpectedConditions.elementToBeClickable(Nexus6Link)).click();
-    }
-
-    public void clickSamsunggalaxys7() {
-        wait.until(ExpectedConditions.elementToBeClickable(Samsunggalaxys7Link )).click();
-
-    }
 }

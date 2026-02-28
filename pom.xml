@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.opencart</groupId>
-    <artifactId>opencart-test</artifactId>
+    <artifactId>PetStore</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
