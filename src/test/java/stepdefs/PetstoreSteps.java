@@ -56,6 +56,10 @@ public class PetstoreSteps {
     @Then("Product code text should be {string}")
     public void product_code_text_should_be(String expectedText) throws InterruptedException{ // Cambia 'string' por 'expectedText'
         String actualText = product.getProductText();
+        System.out.println("Codigo  Actual");
+        System.out.println(actualText);
+        System.out.println("Codigo  Esperado");
+        System.out.println(expectedText);
         Assert.assertEquals(expectedText, actualText);
         Thread.sleep(3000);
     }

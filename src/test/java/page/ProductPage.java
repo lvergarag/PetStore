@@ -12,7 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ProductPage extends BasePage {
 
-    private By productTitle = By.xpath("//h2");
+//    private By productTitle = By.xpath("//h2");  */
+    private By productTitle = By.xpath("//div[@id='Catalog']//h2");
 
     public ProductPage(WebDriver driver) {
         super(driver);

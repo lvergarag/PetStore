@@ -36,6 +36,4 @@ public class HomePage extends BasePage {
     public void open() {
         driver.get("https://petstore.octoperf.com/actions/Catalog.action");
     }
-
-
 }
